@@ -1,5 +1,6 @@
 package org.iftm.primeiroSpringBoot.entity;
 
+import org.iftm.primeiroSpringBoot.entity.Calculadora;
 
 public class TesteManualCalculadora {
 
