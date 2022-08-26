@@ -18,4 +18,18 @@ public class CalculadoraTest {
 		Assertions.assertEquals(resultadoEsperado, resultadoObtido);		
 	}
 
+	@Test
+	public void testaSomaCorretaParaDoisInteirosNegativos() {
+		Calculadora calculadora = new Calculadora();		
+		int entradaNumero1 = -10;
+		int entradaNumero2 = 5;		
+		int resultadoEsperado = -5;
+		
+		calculadora.somar(entradaNumero1, entradaNumero2);
+		int resultadoObtido = calculadora.getResultado();
+		
+		Assertions.assertEquals(resultadoEsperado, resultadoObtido);		
+	}
+	
+	
 }
