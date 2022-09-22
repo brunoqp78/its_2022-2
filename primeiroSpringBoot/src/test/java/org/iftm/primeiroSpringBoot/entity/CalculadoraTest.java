@@ -31,5 +31,19 @@ public class CalculadoraTest {
 		Assertions.assertEquals(resultadoEsperado, resultadoObtido);		
 	}
 	
+	@Test
+	public void testarDividirNaoAceitaDivisorZero() {
+		Calculadora calculadora = new Calculadora();		
+		int entradaNumero1 = 10;
+		int entradaNumero2 = 0;	
+		Assertions.assertThrows(
+				ArithmeticException.class, 
+				()->{
+					calculadora.dividir(entradaNumero1, entradaNumero2);
+					},
+				"Houve divisão por zero!!"
+				);
+
+	}
 	
 }
